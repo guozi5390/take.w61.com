@@ -59,6 +59,8 @@
 
     .cta-button {
     display: inline-block;
+    position: relative;
+    overflow: hidden;
     background: #000;
     color: white !important;
     padding: 1.2rem 2rem;
@@ -70,13 +72,40 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s, box-shadow 0.2s;
     border: none;
-   }
+    text-align: center;
+}
 
-    .cta-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-        background: #222;
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    background: #222;
+}
+
+.cta-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(25deg);
+    animation: shine 2.5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(25deg);
     }
+    100% {
+        transform: translateX(100%) rotate(25deg);
+    }
+}
 
     .highlight-box {
         background: rgba(255, 255, 255, 0.1);
