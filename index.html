@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高成長株3銘柄無料公開</title>
+<style>
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #000000, #ffffff);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    body {
+        font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+        line-height: 1.7;
+        color: #f0f0f0;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: transparent;
+    }
+
+    .main-title {
+        font-size: 2.4rem;
+        margin: 2rem 0 1rem;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    .disclaimer {
+        background-color: #2a2a2a;
+        border: 1px solid #ffdddd;
+        padding: 1.2rem;
+        margin: 2rem 0;
+        font-size: 0.9rem;
+        color: #f9caca;
+        border-radius: 5px;
+    }
+
+    .content-image {
+        width: 100%;
+        height: auto;
+        margin: 2.5rem 0;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        border: 1px solid #333;
+    }
+
+    .cta-button {
+    display: inline-block;
+    background: #000;
+    color: white !important;
+    padding: 1.2rem 2rem;
+    margin: 2.5rem auto;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+   }
+
+    .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+        background: #222;
+    }
+
+    .highlight-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        margin: 2.5rem 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        border-left: 5px solid #00B900;
+        color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+        .main-title { font-size: 1.8rem; }
+        body { padding: 15px; }
+        .highlight-box { padding: 1.5rem; }
+    }
+
+    .portfolio-section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto 3rem;
+        padding: 0 20px;
+        max-width: 1200px;
+        position: relative;
+    }
+
+    .section-title::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 3px;
+        background: #00B900;
+        margin: 1.5rem auto 0;
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .portfolio-item {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        background: rgba(255,255,255,0.05);
+        transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+    }
+
+    .full-display-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+            max-width: 600px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+        }
+    }
+
+    .image-panel {
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .image-panel-title {
+        font-size: 2rem;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        position: relative;
+    }
+
+    .image-panel-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: #00B900;
+        margin: 1rem auto 0;
+    }
+
+    .image-panel-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.05);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .image-panel-img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(255,255,255,0.1);
+        border: 1px solid #333;
+    }
+
+    .image-panel-caption {
+        color: #eee;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+</style>
+</head>
+<body>
+
+  <h1 class="main-title">【金融界を揺るがす爆弾情報】<br>高成長株3銘柄</h1>
+
+  <img src="https://i.ibb.co/20rm4CKz/sc2.png" alt="投資哲学" class="content-image">
+
+<section class="image-panel">
+  <div class="image-panel-wrapper">
+    <img src="https://i.ibb.co/7t4Bs0C9/1-001-15.jpg" alt="今月の成果グラフ" class="image-panel-img">
+    <p class="image-panel-caption">⬇️今すぐ無料で受け取るにはこちら⬇️</p>
+  </div>
+</section>
+
+  <!-- CTA按钮 -->
+<div style="text-align: center;">
+  <a href="https://line.me/ti/p/E9uPG2_Jge" class="cta-button" target="_blank">
+    ▶ 無料line登録で優良株3銘柄を受け取る
+  </a>
+</div>
+
+  <div class="highlight-box">
+    <p>「銘柄選定と徹底リサーチ。これが成功の核心です」</p>
+    <p>現代の金融環境では、年率2%のインフレが進行すれば、35年で物価は2倍に。現金保有だけでは資産価値が半減する計算となります。</p>
+    <p>積極的な資産運用者と預金のみの方との経済格差は拡大する一方。行動しないこと自体が最大の機会損失となる時代です。</p>
+    <p>株式市場はリスク分散と高いリターンの可能性を併せ持つ優れた投資手段です。企業の成長に伴う株価上昇と配当金による複利効果が期待できます。</p>
+  </div>
+
+  <!-- 四宮格展示：本月戦績 -->
+  <section class="portfolio-section">
+    <h2 class="section-title">本月戦績</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5b0bwAAo1mW?format=png&name=small" alt="戦績1" class="full-display-image"></div></div>
+      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5cVWIAEqwP7?format=png&name=small" alt="戦績2" class="full-display-image"></div></div>
+      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5cgWIAAW1l8?format=png&name=small" alt="戦績3" class="full-display-image"></div></div>
+      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5b1bgAAxdtn?format=png&name=small" alt="戦績4" class="full-display-image"></div></div>
+    </div>
+  </section>
+
+  <!-- 图片板块 -->
+<section class="image-panel">
+  <div class="image-panel-wrapper">
+    <img src="https://i.ibb.co/qLTcdQct/lp301-s05-02.png" alt="講座紹介ポスター" class="image-panel-img">
+    <p class="image-panel-caption">株式投資講座｜今月限定公開</p>
+  </div>
+</section>
+
+  <!-- CTA按钮 -->
+<div style="text-align: center;">
+  <a href="https://line.me/ti/p/E9uPG2_Jge" class="cta-button" target="_blank">
+    ▶ 無料line登録で優良株3銘柄を受け取る
+  </a>
+</div>
+
+  <div class="disclaimer">
+    ※投資にはリスクが伴います。過去の実績は将来の成果を保証するものではありません。<br>
+    ※本サービスは投資助言ではなく、情報提供を目的としています。
+  </div>
+
+</body>
+</html>
