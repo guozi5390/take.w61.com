@@ -1,310 +1,801 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>高成長株3銘柄無料公開</title>
-<style>
-    body::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, #000000, #ffffff);
-        z-index: -1;
-        pointer-events: none;
-    }
-
-    body {
-        font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
-        line-height: 1.7;
-        color: #f0f0f0;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: transparent;
-    }
-
-    .main-title {
-        font-size: 2.4rem;
-        margin: 2rem 0 1rem;
-        color: #ffffff;
-        text-align: center;
-        font-weight: 700;
-        line-height: 1.4;
-    }
-
-    .disclaimer {
-        background-color: #2a2a2a;
-        border: 1px solid #ffdddd;
-        padding: 1.2rem;
-        margin: 2rem 0;
-        font-size: 0.9rem;
-        color: #f9caca;
-        border-radius: 5px;
-    }
-
-    .content-image {
-        width: 100%;
-        height: auto;
-        margin: 2.5rem 0;
-        border-radius: 5px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-        border: 1px solid #333;
-    }
-
-    .cta-button {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    background: #000;
-    color: white !important;
-    padding: 1.2rem 2rem;
-    margin: 2.5rem auto;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-    text-align: center;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-    background: #222;
-}
-
-.cta-button::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.4) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: rotate(25deg);
-    animation: shine 2.5s infinite;
-}
-
-@keyframes shine {
-    0% {
-        transform: translateX(-100%) rotate(25deg);
-    }
-    100% {
-        transform: translateX(100%) rotate(25deg);
-    }
-}
-
-    .highlight-box {
-        background: rgba(255, 255, 255, 0.1);
-        padding: 2rem;
-        margin: 2.5rem 0;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        border-left: 5px solid #00B900;
-        color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-        .main-title { font-size: 1.8rem; }
-        body { padding: 15px; }
-        .highlight-box { padding: 1.5rem; }
-    }
-
-    .portfolio-section {
-        padding: 4rem 0;
-    }
-
-    .section-title {
-        font-family: 'Noto Sans JP', sans-serif;
-        font-weight: 700;
-        font-size: 2.2rem;
-        color: #ffffff;
-        text-align: center;
-        margin: 0 auto 3rem;
-        padding: 0 20px;
-        max-width: 1200px;
-        position: relative;
-    }
-
-    .section-title::after {
-        content: "";
-        display: block;
-        width: 80px;
-        height: 3px;
-        background: #00B900;
-        margin: 1.5rem auto 0;
-    }
-
-    .portfolio-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
-
-    .portfolio-item {
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        background: rgba(255,255,255,0.05);
-        transition: transform 0.3s;
-    }
-
-    .portfolio-item:hover {
-        transform: translateY(-5px);
-    }
-
-    .image-wrapper {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: 100%;
-    }
-
-    .full-display-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        padding: 10px;
-    }
-
-    @media (max-width: 1024px) {
-        .portfolio-grid {
-            grid-template-columns: repeat(2, 1fr);
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ShitStockQ">
+<meta name="twitter:title" content="6月の急騰株情報">
+<meta name="twitter:description" content="株式投資や暗号資産に関する売り時買い時をポストします">
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_images/1669883841635581952/CWZ-qup4_400x400.jpg">
+<meta name="twitter:url" content="https://你的网页链接">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShitStockQ - 逆張り投資の達人</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a1f2d;
+            --accent: #f7931a;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --text-muted: #888;
+            --success: #4CAF50;
         }
-    }
-
-    @media (max-width: 768px) {
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-            max-width: 600px;
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Sans JP', 'Roboto', sans-serif;
         }
-        .section-title {
-            font-size: 1.8rem;
+        
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.7;
+            background-image: radial-gradient(circle at 25% 25%, rgba(40,40,40,0.8) 0%, rgba(20,20,20,0.9) 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-    }
-
-    .image-panel {
-        padding: 3rem 1rem;
-        text-align: center;
-    }
-
-    .image-panel-title {
-        font-size: 2rem;
-        color: #ffffff;
-        margin-bottom: 1.5rem;
-        font-weight: 700;
-        position: relative;
-    }
-
-    .image-panel-title::after {
-        content: "";
-        display: block;
-        width: 60px;
-        height: 3px;
-        background: #00B900;
-        margin: 1rem auto 0;
-    }
-
-    .image-panel-wrapper {
-        max-width: 800px;
-        margin: 0 auto;
-        background: rgba(255,255,255,0.05);
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    .image-panel-img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        box-shadow: 0 2px 8px rgba(255,255,255,0.1);
-        border: 1px solid #333;
-    }
-
-    .image-panel-caption {
-        color: #eee;
-        font-size: 1rem;
-        margin-top: 1rem;
-    }
-</style>
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* ヘッダースタイル */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+            border-radius: 0 0 20px 20px;
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(18, 23, 34, 0.95) 0%, rgba(10, 12, 18, 0.95) 100%);
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://pbs.twimg.com/profile_banners/1536978148000399360/1743589305/1500x500') center/cover no-repeat;
+            opacity: 0.15;
+            z-index: -1;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 30px;
+            background: rgba(30, 30, 30, 0.7);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(247, 147, 26, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 20px rgba(247, 147, 26, 0.3);
+        }
+        
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            background: linear-gradient(135deg, #f7931a 0%, #ffb85c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(247, 147, 26, 0.2);
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-weight: 300;
+            color: var(--text-light);
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px 25px;
+            background: rgba(247, 147, 26, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(247, 147, 26, 0.2);
+        }
+        
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        /* メインコンテンツ */
+        .section {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--accent);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            color: var(--text-light);
+        }
+        
+        .philosophy {
+            font-size: 1.3rem;
+            font-style: italic;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(40, 30, 20, 0.6) 100%);
+            border-left: 4px solid var(--accent);
+            margin: 35px 0;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+            color: var(--text-light);
+        }
+        
+        .philosophy::before {
+            content: """;
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            font-size: 8rem;
+            color: var(--accent);
+            opacity: 0.1;
+            font-family: serif;
+        }
+        
+        /* 特徴グリッド */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            padding: 30px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(25, 25, 25, 0.9) 100%);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            border-color: rgba(247, 147, 26, 0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            color: var(--accent);
+            text-align: center;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            text-align: center;
+        }
+        
+        .feature-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 20px 0;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .feature-card:hover .feature-image img {
+            transform: scale(1.05);
+        }
+        
+        /* コミュニティ反応 */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial {
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(30, 30, 30, 0.8) 0%, rgba(25, 30, 35, 0.9) 100%);
+            border-radius: 16px;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .testimonial:before {
+            content: """;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--accent);
+            opacity: 0.1;
+            font-family: serif;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            margin-right: 15px;
+            overflow: hidden;
+            border: 2px solid var(--accent);
+        }
+        
+        .user-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* CTAセクション */
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 31, 45, 0.9) 0%, rgba(15, 18, 26, 0.95) 100%);
+            color: white;
+            padding: 80px 50px;
+            border-radius: 20px;
+            margin: 50px 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(247, 147, 26, 0.3);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://pbs.twimg.com/media/GsL_kOtbQAEwGEq?format=jpg&name=small') center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            border-bottom: 2px solid var(--accent);
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, #f7931a 0%, #ffca7a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent) 0%, #ffb85c 100%);
+            color: #1a1f2d;
+            padding: 22px 60px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 35px 0 25px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(247, 147, 26, 0.5);
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(255, 184, 92, 0.5);
+        }
+        
+        .cta-button::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20px;
+            height: 200%;
+            background: rgba(255,255,255,0.4);
+            transform: rotate(30deg);
+            transition: all 0.8s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(247, 147, 26, 0.7);
+        }
+        
+        .cta-button:hover::after {
+            left: 120%;
+        }
+        
+        .line-note {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            margin-top: 20px;
+            font-weight: 300;
+            color: var(--text-light);
+        }
+        
+        .guarantee {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: rgba(76, 175, 80, 0.1);
+            border-radius: 50px;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+            color: var(--success);
+            font-size: 1rem;
+        }
+        
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 60px 0 40px;
+            color: var(--text-muted);
+            font-size: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 50px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .social-icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .social-icon:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(247, 147, 26, 0.4);
+            color: #1a1f2d;
+        }
+        
+        /* アニメーション */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        /* レスポンシブ */
+        @media (max-width: 992px) {
+            header {
+                min-height: auto;
+                padding: 80px 20px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.3rem;
+            }
+            
+            .section {
+                padding: 40px 30px;
+            }
+            
+            .cta-section {
+                padding: 60px 30px;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .philosophy {
+                font-size: 1.1rem;
+                padding: 25px 20px;
+            }
+            
+            .cta-button {
+                padding: 18px 45px;
+                font-size: 1.3rem;
+            }
+            
+            .stats {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .stat-item {
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.9rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+            
+            .header-content {
+                padding: 20px;
+            }
+            
+            .feature-card {
+                padding: 25px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <h1 class="main-title">【金融界を揺るがす爆弾情報】<br>高成長株3銘柄</h1>
-
-  <img src="https://i.ibb.co/20rm4CKz/sc2.png" alt="投資哲学" class="content-image">
-
-<section class="image-panel">
-  <div class="image-panel-wrapper">
-    <img src="https://i.ibb.co/7t4Bs0C9/1-001-15.jpg" alt="今月の成果グラフ" class="image-panel-img">
-    <p class="image-panel-caption">⬇️今すぐ無料で受け取るにはこちら⬇️</p>
-  </div>
-</section>
-
-  <!-- CTA按钮 -->
-<div style="text-align: center;">
-  <a href="https://line.me/ti/p/E9uPG2_Jge" class="cta-button" target="_blank">
-    ▶ 無料line登録で優良株3銘柄を受け取る
-  </a>
-</div>
-
-  <div class="highlight-box">
-    <p>「銘柄選定と徹底リサーチ。これが成功の核心です」</p>
-    <p>現代の金融環境では、年率2%のインフレが進行すれば、35年で物価は2倍に。現金保有だけでは資産価値が半減する計算となります。</p>
-    <p>積極的な資産運用者と預金のみの方との経済格差は拡大する一方。行動しないこと自体が最大の機会損失となる時代です。</p>
-    <p>株式市場はリスク分散と高いリターンの可能性を併せ持つ優れた投資手段です。企業の成長に伴う株価上昇と配当金による複利効果が期待できます。</p>
-  </div>
-
-  <!-- 四宮格展示：本月戦績 -->
-  <section class="portfolio-section">
-    <h2 class="section-title">本月戦績</h2>
-    <div class="portfolio-grid">
-      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5b0bwAAo1mW?format=png&name=small" alt="戦績1" class="full-display-image"></div></div>
-      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5cVWIAEqwP7?format=png&name=small" alt="戦績2" class="full-display-image"></div></div>
-      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5cgWIAAW1l8?format=png&name=small" alt="戦績3" class="full-display-image"></div></div>
-      <div class="portfolio-item"><div class="image-wrapper"><img src="https://pbs.twimg.com/media/GqtX5b1bgAAxdtn?format=png&name=small" alt="戦績4" class="full-display-image"></div></div>
+    <header>
+        <div class="header-content floating">
+            <img src="https://pbs.twimg.com/media/GsL_kOtbQAEwGEq?format=jpg&name=small" alt="ShitStockQ" class="profile-img">
+            <h1>ShitStockQ</h1>
+            <p class="tagline">「ゴミの山から本物の金を見つけ出す」逆張り投資の達人</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">12,500+</div>
+                    <div class="stat-label">コミュニティメンバー</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">87%</div>
+                    <div class="stat-label">満足度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3.2倍</div>
+                    <div class="stat-label">平均利益率</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>投資哲学</h2>
+            <p class="philosophy">「株価が下がった時に恐れと戦いながら買い増す。いつかその価値が理解される日が来る」</p>
+            
+            <p>ShitStockQは、市場が注目しない銘柄にこそ真の価値があると信じる投資家です。特に:</p>
+            <ul>
+                <li><strong>ビットコイン・ブロックチェーン</strong> - 未来の金融インフラとして確信</li>
+                <li><strong>航空株</strong> - 業界サイクルを見極めた逆張り</li>
+                <li><strong>市場に嫌われた銘柄</strong> - 「ゴミ」とレッテル貼られた中にダイヤモンドを発掘</li>
+            </ul>
+            
+            <p>「上昇してから買うな。下落中に恐れと向き合いながら買い増せ。いつか必ず理解される時が来る」という信念のもと、独自の投資スタイルを貫いています。</p>
+        </section>
+        
+        <section class="section">
+            <h2>ShitStockQの特徴</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>逆張りの美学</h3>
+                    <p>市場が避ける「ゴミ」と呼ばれる銘柄にこそ、真の価値があると信じる。下落相場こそ最高の買い場と考える独自の投資哲学。</p>
+                    <div class="feature-image">
+                        <img src="https://pbs.twimg.com/media/GsPP9T-aMAAnl7V?format=jpg&name=small" alt="逆張り投資">
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>先読みの眼光</h3>
+                    <p>ビットコインや航空株など、市場が気付く前に次なる成長分野を見抜く。最新テクノロジーと伝統産業の両方に精通。</p>
+                    <div class="feature-image">
+                        <img src="https://pbs.twimg.com/media/Gsan1K0awAAwFFz?format=jpg&name=small" alt="先読み投資">
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hamburger"></i></div>
+                    <h3>生活者の視点</h3>
+                    <p>投資分析だけでなく、美味しいハンバーガー店の紹介など、生活に根ざした情報も発信。投資は生活の一部という考え方。</p>
+                    <div class="feature-image">
+                        <img src="https://pbs.twimg.com/media/Gr6dHb8X0AEcQdz?format=jpg&name=large" alt="生活者の視点">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>コミュニティの声</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>「最初は突飛すぎると思ったけど、ShitStockQさんの逆張り哲学には目から鱗でした。下落相場で買い増す勇気をもらいました」</p>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://pbs.twimg.com/media/GsL_kOtbQAEwGEq?format=jpg&name=small" alt="田中 太郎">
+                        </div>
+                        <div>
+                            <strong>田中 太郎</strong>
+                            <div style="font-size:0.95rem;opacity:0.7">投資歴3年</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>「彼のハンバーガー店推薦は神レベル！投資の話だけじゃなくて、こういう生活に根ざした情報も大好きです」</p>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://pbs.twimg.com/media/GsL_kOtbQAEwGEq?format=jpg&name=small" alt="佐藤 花子">
+                        </div>
+                        <div>
+                            <strong>佐藤 花子</strong>
+                            <div style="font-size:0.95rem;opacity:0.7">コミュニティメンバー</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <p>「深田萌絵ネタからビットコイン分析まで幅広い！時々遅めの情報もあるけど、独自の視点は勉強になります」</p>
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://pbs.twimg.com/media/GsL_kOtbQAEwGEq?format=jpg&name=small" alt="鈴木 一郎">
+                        </div>
+                        <div>
+                            <strong>鈴木 一郎</strong>
+                            <div style="font-size:0.95rem;opacity:0.7">フォロワー</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>ShitStockQと投資の本質を学ぶ</h2>
+                <p>LINEコミュニティで、逆張り投資の哲学と実践を共有しませんか？</p>
+                <p>限定コンテンツ・市場分析・コミュニティディスカッションに参加</p>
+                
+                <a href="https://works.do/5uXN95N" class="cta-button">LINEコミュニティに参加する</a>
+                <p class="line-note">※リンクをクリックするとLINE追加ページに移動します</p>
+                
+                <div class="guarantee">
+                    <i class="fas fa-shield-alt"></i> 30日間満足保証
+                </div>
+            </div>
+        </section>
     </div>
-  </section>
-
-  <!-- 图片板块 -->
-<section class="image-panel">
-  <div class="image-panel-wrapper">
-    <img src="https://i.ibb.co/qLTcdQct/lp301-s05-02.png" alt="講座紹介ポスター" class="image-panel-img">
-    <p class="image-panel-caption">株式投資講座｜今月限定公開</p>
-  </div>
-</section>
-
-  <!-- CTA按钮 -->
-<div style="text-align: center;">
-  <a href="https://line.me/ti/p/E9uPG2_Jge" class="cta-button" target="_blank">
-    ▶ 無料line登録で優良株3銘柄を受け取る
-  </a>
-</div>
-
-  <div class="disclaimer">
-    ※投資にはリスクが伴います。過去の実績は将来の成果を保証するものではありません。<br>
-    ※本サービスは投資助言ではなく、情報提供を目的としています。
-  </div>
-
+    
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://x.com/ShitStockQ" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://works.do/5uXN95N" class="social-icon"><i class="fab fa-line"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">利用規約</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">お問い合わせ</a>
+                <a href="#">免責事項</a>
+            </div>
+            <p>© 2025 ShitStockQ Community. All rights reserved.</p>
+            <p>投資にはリスクがあります。過去の実績は将来の結果を保証するものではありません。</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // スクロールアニメーション
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // アニメーション対象要素
+            const animatedElements = document.querySelectorAll('.section, .header-content');
+            animatedElements.forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+            
+            // CTAボタンアニメーション
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            ctaButton.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // 背景パーティクルエフェクト
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            canvas.style.position = 'fixed';
+            canvas.style.top = 0;
+            canvas.style.left = 0;
+            canvas.style.zIndex = -1;
+            canvas.style.pointerEvents = 'none';
+            document.body.appendChild(canvas);
+            
+            const particles = [];
+            const particleCount = 60;
+            
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    radius: Math.random() * 2 + 0.5,
+                    speed: Math.random() * 0.5 + 0.1,
+                    angle: Math.random() * Math.PI * 2,
+                    distance: Math.random() * 50 + 20
+                });
+            }
+            
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                
+                particles.forEach(p => {
+                    p.angle += p.speed / 100;
+                    const moveX = Math.cos(p.angle) * p.distance / 10;
+                    const moveY = Math.sin(p.angle) * p.distance / 10;
+                    
+                    ctx.beginPath();
+                    ctx.arc(p.x + moveX, p.y + moveY, p.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(247, 147, 26, ${0.2 + Math.random() * 0.3})`;
+                    ctx.fill();
+                });
+                
+                requestAnimationFrame(animateParticles);
+            }
+            
+            animateParticles();
+            
+            // リサイズ時のキャンバス更新
+            window.addEventListener('resize', function() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        });
+    </script>
 </body>
 </html>
